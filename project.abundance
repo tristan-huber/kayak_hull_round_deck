@@ -43,22 +43,6 @@
       "name": "length"
     },
     {
-      "atomType": "Assembly",
-      "x": 0.45768229166666663,
-      "y": 0.6914285714285714,
-      "uniqueID": "id-27926",
-      "ioValues": [
-        {
-          "name": "Shape 3",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 5",
-          "ioValue": null
-        }
-      ]
-    },
-    {
       "atomType": "Export",
       "x": 0.7272135416666666,
       "y": 0.22285714285714286,
@@ -90,8 +74,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.388671875,
-      "y": 0.8514285714285714,
+      "x": 0.134765625,
+      "y": 0.92,
       "uniqueID": "id-27904",
       "name": "util.Mirror",
       "topLevel": false,
@@ -175,100 +159,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.20182291666666666,
-      "y": 0.8514285714285714,
-      "uniqueID": "id-40651",
-      "name": "flipFaceOrientation",
-      "ioValues": [
-        {
-          "name": "faceAssembly",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-40648",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Code",
-          "x": 0.3951822916666667,
-          "y": 0.52,
-          "uniqueID": "id-40649",
-          "ioValues": [
-            {
-              "name": "shape",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "interpreterVersion": 1,
-          "code": "function run(shape: Assembly) {\n  return shape.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Face) {\n      leaf.geometry = leaf.geometry.flipOrientation()\n    }\n    return leaf;\n  })\n}",
-          "compiledCode": "\"use strict\";\nfunction run(shape) {\n    return shape.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Face) {\n            leaf.geometry = leaf.geometry.flipOrientation();\n        }\n        return leaf;\n    });\n}\n"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.14,
-          "uniqueID": "id-40650",
-          "name": "faceAssembly",
-          "type": "geometry"
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-40649",
-          "ap2ID": "id-40648"
-        },
-        {
-          "ap2Name": "shape",
-          "ap1ID": "id-40650",
-          "ap2ID": "id-40649"
-        }
-      ],
-      "parentRepo": {
-        "lastFoundGit": "2026-07-27T10:23:38.997Z",
-        "privateRepo": false,
-        "repoName": "flipFaceOrientation",
-        "dateCreated": "2026-07-24T23:27:17Z",
-        "likes": 0,
-        "readMe": "https://raw.githubusercontent.com/tristan-huber/flipFaceOrientation/master/README.md?sanitize=true",
-        "yyyy": 2026,
-        "topMoleculeID": "id-37421",
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/tristan-huber/flipFaceOrientation",
-        "topics": [
-          "abundance-tool"
-        ],
-        "pullRequests": [],
-        "parentRepo": null,
-        "forks": 0,
-        "dateModified": "739821",
-        "ranking": 0.3,
-        "searchField": "flipfaceorientation tristan-huber flip orientation of faces in an assembly of bare faces abundance-tool",
-        "owner": "tristan-huber",
-        "description": "flip orientation of faces in an assembly of bare faces",
-        "contentURL": "https://raw.githubusercontent.com/tristan-huber/flipFaceOrientation/master/project.abundance?sanitize=true",
-        "svgURL": "https://raw.githubusercontent.com/tristan-huber/flipFaceOrientation/master/project.svg?sanitize=true",
-        "isLocal": false
-      },
-      "unitsKey": "Unitless",
-      "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1785174335502
-    },
-    {
-      "atomType": "GitHubMolecule",
-      "x": 0.640625,
-      "y": 0.7742857142857142,
+      "x": 0.5377604166666666,
+      "y": 0.84,
       "uniqueID": "id-74154",
       "name": "facesToSolid",
       "ioValues": [
@@ -2113,11 +2005,6 @@
           "ap2ID": "id-26949"
         },
         {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-41414",
-          "ap2ID": "id-26908"
-        },
-        {
           "ap2Name": "Shape 1",
           "ap1ID": "id-26915",
           "ap2ID": "id-26933"
@@ -2158,6 +2045,11 @@
           "ap2ID": "id-26967"
         },
         {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-40569",
+          "ap2ID": "id-26908"
+        },
+        {
           "ap2Name": "Geometry",
           "ap1ID": "id-40608",
           "ap2ID": "id-40569"
@@ -2172,8 +2064,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.26953125,
-      "y": 0.26857142857142857,
+      "x": 0.16471354166666669,
+      "y": 0.23428571428571426,
       "uniqueID": "id-27153",
       "name": "CockpitKeepout",
       "ioValues": [
@@ -2941,8 +2833,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.38541666666666663,
-      "y": 0.19428571428571428,
+      "x": 0.22526041666666669,
+      "y": 0.3685714285714286,
       "uniqueID": "id-27561",
       "name": "top deck",
       "ioValues": [
@@ -3156,31 +3048,7 @@
             },
             {
               "name": "Shape 1",
-              "ioValue": {
-                "geometry": "ac7fcf90-0",
-                "color": "#3c5a6e",
-                "tags": [],
-                "bom": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "metadata": {},
-                "dimension": "Wire"
-              }
+              "ioValue": null
             },
             {
               "name": "Shape 2",
@@ -4711,8 +4579,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5670572916666667,
-      "y": 0.5114285714285715,
+      "x": 0.40234375000000006,
+      "y": 0.48857142857142855,
       "uniqueID": "id-75573",
       "ioValues": [
         {
@@ -4726,8 +4594,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.4466145833333333,
-      "y": 0.5457142857142857,
+      "x": 0.3268229166666667,
+      "y": 0.5542857142857143,
       "uniqueID": "id-75587",
       "name": "ExtractEdges",
       "ioValues": [
@@ -4756,14 +4624,7 @@
           "y": 0.14,
           "uniqueID": "id-75585",
           "type": "edgeselect",
-          "selectedEdgeData": {
-            "0": [
-              3
-            ],
-            "2": [
-              3
-            ]
-          }
+          "selectedEdgeData": {}
         },
         {
           "atomType": "Code",
@@ -4824,14 +4685,26 @@
       "lastReloadedFromGithubAt": 1787262605579
     },
     {
-      "atomType": "GitHubMolecule",
-      "x": 0.515625,
-      "y": 0.29714285714285715,
-      "uniqueID": "id-75600",
-      "name": "util.FuseWire",
+      "atomType": "Assembly",
+      "x": 0.30859375,
+      "y": 0.8514285714285714,
+      "uniqueID": "id-75621",
       "ioValues": [
         {
-          "name": "wires",
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.51953125,
+      "y": 0.3628571428571429,
+      "uniqueID": "id-75630",
+      "name": "ExtractFaces",
+      "ioValues": [
+        {
+          "name": "Assembly",
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
@@ -4841,7 +4714,7 @@
           "atomType": "Output",
           "x": 0.98,
           "y": 0.5,
-          "uniqueID": "id-75597",
+          "uniqueID": "id-75627",
           "ioValues": [
             {
               "name": "number or geometry",
@@ -4850,103 +4723,280 @@
           ]
         },
         {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.14,
+          "uniqueID": "id-75628",
+          "name": "Assembly",
+          "type": "faceselect",
+          "selectedFaceData": {
+            "0": [
+              5,
+              2
+            ]
+          }
+        },
+        {
           "atomType": "Code",
-          "x": 0.4290364583333333,
-          "y": 0.5228571428571429,
-          "uniqueID": "id-75598",
+          "x": 0.2565104166666667,
+          "y": 0.7599999999999999,
+          "uniqueID": "id-75629",
           "ioValues": [
             {
-              "name": "shape",
+              "name": "input",
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ],
           "interpreterVersion": 1,
-          "code": "// as edges\nfunction run(\n  shape: Assembly,\n) {\n  let edges: replicad.Edge[] = shape.getSelectedEdges()\n  if (edges.length == 0) {\n    shape.onLeafs((leaf) => {\n      if (leaf.is3D() || leaf.geometry instanceof replicad.Wire) {\n        edges.push(...leaf.geometry.edges)\n      } else {\n        return undefined\n      }\n      return leaf;\n    })\n  }\n  console.log(edges.map((e) => e.orientation))\n  edges = sortEdgesByContinuity(edges, 0.001)\n  //  return replicad.assembleWire([edges[2], edges[3], edges[0], edges[1]])\n  return replicad.assembleWire(edges);\n}\n\nimport type { Edge } from \"replicad\";\n\ntype Tuple3 = readonly [number, number, number];\n\n/**\n * Sort a collection of replicad Edges so that each edge's endPoint matches the\n * next edge's startPoint (flipping orientation when necessary).\n *\n * - Starts from an edge whose startPoint is shared by no other edge's endPoint.\n * - If no such start exists (closed loop), starts with edges[0].\n * - Throws if any vertex is shared by more than two edges.\n * - Throws if the edges are not fully connected into a single chain.\n *\n * @param edges     Input edges in arbitrary order.\n * @param tolerance Distance under which two points are considered equal.\n */\nexport function sortEdgesByContinuity(\n  edges: Edge[],\n  tolerance = 1e-6,\n): Edge[] {\n  if (edges.length <= 1) return edges.slice();\n\n  const tol2 = tolerance * tolerance;\n\n  const dist2 = (a: Tuple3, b: Tuple3): number => {\n    const dx = a[0] - b[0];\n    const dy = a[1] - b[1];\n    const dz = a[2] - b[2];\n    return dx * dx + dy * dy + dz * dz;\n  };\n  const eq = (a: Tuple3, b: Tuple3): boolean => dist2(a, b) <= tol2;\n\n  // Cache endpoint tuples so we only query replicad once per edge.\n  type EndpointInfo = { edge: Edge; start: Tuple3; end: Tuple3 };\n  const infos: EndpointInfo[] = edges.map((edge) => ({\n    edge,\n    start: edge.startPoint.toTuple() as Tuple3,\n    end: edge.endPoint.toTuple() as Tuple3,\n  }));\n\n  // Bucket endpoint tuples into equivalence classes under the tolerance.\n  type VertexNode = { point: Tuple3; incidences: number };\n  const nodes: VertexNode[] = [];\n  const findOrAddNode = (p: Tuple3): VertexNode => {\n    for (const n of nodes) {\n      if (eq(n.point, p)) return n;\n    }\n    const n: VertexNode = { point: p, incidences: 0 };\n    nodes.push(n);\n    return n;\n  };\n\n  // Per-edge vertex nodes and per-node incidence count for validation.\n  const edgeNodes = infos.map((info) => {\n    const s = findOrAddNode(info.start);\n    const e = findOrAddNode(info.end);\n    s.incidences++;\n    e.incidences++;\n    return { start: s, end: e };\n  });\n\n  for (const n of nodes) {\n    if (n.incidences > 2) {\n      throw new Error(\n        `Vertex (${n.point.join(\", \")}) is shared by ${n.incidences} edge endpoints; expected at most 2.`,\n      );\n    }\n  }\n  // Pick a starting edge using the incidence counts we already computed.\n  // A chain terminus is a vertex with incidences === 1. Prefer an edge whose\n  // start is a terminus (no flip); otherwise flip an edge whose end is one.\n  let startIdx = edgeNodes.findIndex((n) => n.start.incidences === 1);\n  let startFlipped = false;\n  if (startIdx === -1) {\n    startIdx = edgeNodes.findIndex((n) => n.end.incidences === 1);\n    startFlipped = startIdx !== -1;\n  }\n\n  // Closed loop: no terminus. Just start from edge 0.\n  if (startIdx === -1) startIdx = 0;\n\n  const used = new Array<boolean>(infos.length).fill(false);\n  const result: Edge[] = [];\n\n  const firstEdge = startFlipped\n    ? infos[startIdx].edge.flipOrientation()\n    : infos[startIdx].edge;\n  let currentEndPoint: Tuple3 = startFlipped\n    ? infos[startIdx].start\n    : infos[startIdx].end;\n  result.push(firstEdge);\n  used[startIdx] = true;\n\n  while (result.length < infos.length) {\n    let nextIdx = -1;\n    let flip = false;\n    for (let i = 0; i < infos.length; i++) {\n      if (used[i]) continue;\n      if (eq(infos[i].start, currentEndPoint)) {\n        nextIdx = i;\n        flip = false;\n        break;\n      }\n      if (eq(infos[i].end, currentEndPoint)) {\n        nextIdx = i;\n        flip = true;\n        break;\n      }\n    }\n\n    if (nextIdx === -1) {\n      throw new Error(\n        \"Edges are not fully connected: could not find a continuation from \" +\n        `(${currentEndPoint.join(\", \")}).`,\n      );\n    }\n\n    const info = infos[nextIdx];\n    result.push(flip ? info.edge.flipOrientation() : info.edge);\n    currentEndPoint = flip ? info.start : info.end;\n    used[nextIdx] = true;\n  }\n\n  return result;\n}\n",
-          "compiledCode": "// as edges\nfunction run(shape) {\n    let edges = shape.getSelectedEdges();\n    if (edges.length == 0) {\n        shape.onLeafs((leaf) => {\n            if (leaf.is3D() || leaf.geometry instanceof replicad.Wire) {\n                edges.push(...leaf.geometry.edges);\n            }\n            else {\n                return undefined;\n            }\n            return leaf;\n        });\n    }\n    console.log(edges.map((e) => e.orientation));\n    edges = sortEdgesByContinuity(edges, 0.001);\n    //  return replicad.assembleWire([edges[2], edges[3], edges[0], edges[1]])\n    return replicad.assembleWire(edges);\n}\n/**\n * Sort a collection of replicad Edges so that each edge's endPoint matches the\n * next edge's startPoint (flipping orientation when necessary).\n *\n * - Starts from an edge whose startPoint is shared by no other edge's endPoint.\n * - If no such start exists (closed loop), starts with edges[0].\n * - Throws if any vertex is shared by more than two edges.\n * - Throws if the edges are not fully connected into a single chain.\n *\n * @param edges     Input edges in arbitrary order.\n * @param tolerance Distance under which two points are considered equal.\n */\nexport function sortEdgesByContinuity(edges, tolerance = 1e-6) {\n    if (edges.length <= 1)\n        return edges.slice();\n    const tol2 = tolerance * tolerance;\n    const dist2 = (a, b) => {\n        const dx = a[0] - b[0];\n        const dy = a[1] - b[1];\n        const dz = a[2] - b[2];\n        return dx * dx + dy * dy + dz * dz;\n    };\n    const eq = (a, b) => dist2(a, b) <= tol2;\n    const infos = edges.map((edge) => ({\n        edge,\n        start: edge.startPoint.toTuple(),\n        end: edge.endPoint.toTuple(),\n    }));\n    const nodes = [];\n    const findOrAddNode = (p) => {\n        for (const n of nodes) {\n            if (eq(n.point, p))\n                return n;\n        }\n        const n = { point: p, incidences: 0 };\n        nodes.push(n);\n        return n;\n    };\n    // Per-edge vertex nodes and per-node incidence count for validation.\n    const edgeNodes = infos.map((info) => {\n        const s = findOrAddNode(info.start);\n        const e = findOrAddNode(info.end);\n        s.incidences++;\n        e.incidences++;\n        return { start: s, end: e };\n    });\n    for (const n of nodes) {\n        if (n.incidences > 2) {\n            throw new Error(`Vertex (${n.point.join(\", \")}) is shared by ${n.incidences} edge endpoints; expected at most 2.`);\n        }\n    }\n    // Pick a starting edge using the incidence counts we already computed.\n    // A chain terminus is a vertex with incidences === 1. Prefer an edge whose\n    // start is a terminus (no flip); otherwise flip an edge whose end is one.\n    let startIdx = edgeNodes.findIndex((n) => n.start.incidences === 1);\n    let startFlipped = false;\n    if (startIdx === -1) {\n        startIdx = edgeNodes.findIndex((n) => n.end.incidences === 1);\n        startFlipped = startIdx !== -1;\n    }\n    // Closed loop: no terminus. Just start from edge 0.\n    if (startIdx === -1)\n        startIdx = 0;\n    const used = new Array(infos.length).fill(false);\n    const result = [];\n    const firstEdge = startFlipped\n        ? infos[startIdx].edge.flipOrientation()\n        : infos[startIdx].edge;\n    let currentEndPoint = startFlipped\n        ? infos[startIdx].start\n        : infos[startIdx].end;\n    result.push(firstEdge);\n    used[startIdx] = true;\n    while (result.length < infos.length) {\n        let nextIdx = -1;\n        let flip = false;\n        for (let i = 0; i < infos.length; i++) {\n            if (used[i])\n                continue;\n            if (eq(infos[i].start, currentEndPoint)) {\n                nextIdx = i;\n                flip = false;\n                break;\n            }\n            if (eq(infos[i].end, currentEndPoint)) {\n                nextIdx = i;\n                flip = true;\n                break;\n            }\n        }\n        if (nextIdx === -1) {\n            throw new Error(\"Edges are not fully connected: could not find a continuation from \" +\n                `(${currentEndPoint.join(\", \")}).`);\n        }\n        const info = infos[nextIdx];\n        result.push(flip ? info.edge.flipOrientation() : info.edge);\n        currentEndPoint = flip ? info.start : info.end;\n        used[nextIdx] = true;\n    }\n    return result;\n}\n"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0231,
-          "y": 0.14,
-          "uniqueID": "id-75599",
-          "name": "wires",
-          "type": "geometry"
+          "code": "function run(input: Assembly) {\n  const res =  input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Faces. Input must be 3d\")\n    }\n    if (leaf.selection?.faces && leaf.selection.faces.length > 0) {\n      const faces = leaf.geometry.faces;\n      const faceIndexes = leaf.selection.faces\n      if (faceIndexes.length == 1) {\n        leaf.geometry = faces[faceIndexes[0]]\n        return leaf;\n      } else {\n        const res = faceIndexes.map((index) => {\n          return new Assembly({ ...leaf, geometry: faces[index] })\n        })\n        return new Assembly({\n          geometry: res\n        })\n      }\n    }\n    return null;\n  })\n  console.log(res)\n  return res;\n}",
+          "compiledCode": "\"use strict\";\nfunction run(input) {\n    const res = input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Faces. Input must be 3d\");\n        }\n        if (leaf.selection?.faces && leaf.selection.faces.length > 0) {\n            const faces = leaf.geometry.faces;\n            const faceIndexes = leaf.selection.faces;\n            if (faceIndexes.length == 1) {\n                leaf.geometry = faces[faceIndexes[0]];\n                return leaf;\n            }\n            else {\n                const res = faceIndexes.map((index) => {\n                    return new Assembly({ ...leaf, geometry: faces[index] });\n                });\n                return new Assembly({\n                    geometry: res\n                });\n            }\n        }\n        return null;\n    });\n    console.log(res);\n    return res;\n}\n"
         }
       ],
       "allConnectors": [
         {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-75598",
-          "ap2ID": "id-75597"
+          "ap2Name": "input",
+          "ap1ID": "id-75628",
+          "ap2ID": "id-75629"
         },
         {
-          "ap2Name": "shape",
-          "ap1ID": "id-75599",
-          "ap2ID": "id-75598"
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-75629",
+          "ap2ID": "id-75627"
         }
       ],
       "parentRepo": {
         "lastFoundGit": "2026-08-20T18:23:39.118Z",
         "privateRepo": false,
-        "repoName": "util.FuseWire",
-        "dateCreated": "2026-07-20T22:27:14Z",
+        "repoName": "ExtractFaces",
+        "dateCreated": "2026-07-24T19:57:30Z",
         "likes": 0,
-        "readMe": "https://raw.githubusercontent.com/tristan-huber/util.FuseWire/master/README.md?sanitize=true",
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/ExtractFaces/master/README.md?sanitize=true",
         "yyyy": 2026,
-        "topMoleculeID": "id-42",
+        "topMoleculeID": "id-34810",
         "githubMoleculesUsed": [],
-        "html_url": "https://github.com/tristan-huber/util.FuseWire",
+        "html_url": "https://github.com/tristan-huber/ExtractFaces",
         "topics": [
           "abundance-tool"
         ],
         "pullRequests": [],
         "parentRepo": null,
         "forks": 0,
-        "dateModified": "739826",
-        "ranking": 3.6,
-        "searchField": "util.fusewire tristan-huber fuse a collection of wires into one wire object. also called join wire, assemble wire, or concatenate wire. this is a thin wrapper of assemblewire and can return a branching wire. abundance-tool",
+        "dateModified": "739821",
+        "ranking": 4.2,
+        "searchField": "extractfaces tristan-huber extract faces from an assembly by click selection. faces are identified by index within their leaf of the assembly. returns a new assembly with just faces abundance-tool",
         "owner": "tristan-huber",
-        "description": "Fuse a collection of wires into one wire object. Also called join wire, assemble wire, or concatenate wire. This is a thin wrapper of assembleWire and can return a branching wire.",
-        "contentURL": "https://raw.githubusercontent.com/tristan-huber/util.FuseWire/master/project.abundance?sanitize=true",
-        "svgURL": "https://raw.githubusercontent.com/tristan-huber/util.FuseWire/master/project.svg?sanitize=true",
+        "description": "Extract faces from an assembly by click selection. Faces are identified by index within their leaf of the assembly. Returns a new assembly with just faces",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/ExtractFaces/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/ExtractFaces/master/project.svg?sanitize=true",
         "isLocal": false
       },
       "unitsKey": "Unitless",
       "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1787262624812
+      "lastReloadedFromGithubAt": 1787262715519
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.599609375,
+      "y": 0.42857142857142855,
+      "uniqueID": "id-75639",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.11263020833333334,
+      "y": 0.43999999999999995,
+      "uniqueID": "id-75643",
+      "name": "deck",
+      "ioValues": [
+        {
+          "name": "diam",
+          "ioValue": 10,
+          "currentEquation": "10"
+        },
+        {
+          "name": "hull",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-75645",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.34285714285714286,
+          "uniqueID": "id-75647",
+          "name": "diam"
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.14453125,
+          "y": 0.3142857142857143,
+          "uniqueID": "id-75650",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.259765625,
+          "y": 0.5228571428571429,
+          "uniqueID": "id-75653",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 90,
+              "currentEquation": "90"
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 90,
+              "currentEquation": "90"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.36197916666666663,
+          "y": 0.24571428571428572,
+          "uniqueID": "id-75659",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 5
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.13671875,
+          "y": 0.5657142857142857,
+          "uniqueID": "id-75665",
+          "name": "x / 2",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 10
+            }
+          ],
+          "currentEquation": "x / 2"
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.41080729166666663,
+          "y": 0.5571428571428572,
+          "uniqueID": "id-75669",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 144,
+              "currentEquation": "length"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.6428571428571428,
+          "uniqueID": "id-75673",
+          "name": "hull"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-75647",
+          "ap2ID": "id-75650"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-75647",
+          "ap2ID": "id-75665"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-75650",
+          "ap2ID": "id-75653"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-75653",
+          "ap2ID": "id-75659"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-75659",
+          "ap2ID": "id-75669"
+        },
+        {
+          "ap2Name": "xDist",
+          "ap1ID": "id-75665",
+          "ap2ID": "id-75659"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.232421875,
+      "y": 0.7714285714285715,
+      "uniqueID": "id-75676",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
-    {
-      "ap2Name": "FaceAssembly",
-      "ap1ID": "id-27926",
-      "ap2ID": "id-74154"
-    },
-    {
-      "ap2Name": "Input",
-      "ap1ID": "id-27926",
-      "ap2ID": "id-75587"
-    },
-    {
-      "ap2Name": "Shape 5",
-      "ap1ID": "id-27904",
-      "ap2ID": "id-27926"
-    },
-    {
-      "ap2Name": "panels",
-      "ap1ID": "id-40651",
-      "ap2ID": "id-27561"
-    },
-    {
-      "ap2Name": "assembly",
-      "ap1ID": "id-40651",
-      "ap2ID": "id-27904"
-    },
-    {
-      "ap2Name": "Shape 3",
-      "ap1ID": "id-40651",
-      "ap2ID": "id-27926"
-    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-74154",
@@ -4958,9 +5008,19 @@
       "ap2ID": "id-74681"
     },
     {
-      "ap2Name": "faceAssembly",
+      "ap2Name": "Assembly",
+      "ap1ID": "id-74154",
+      "ap2ID": "id-75630"
+    },
+    {
+      "ap2Name": "assembly",
       "ap1ID": "id-26906",
-      "ap2ID": "id-40651"
+      "ap2ID": "id-27904"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-26906",
+      "ap2ID": "id-75676"
     },
     {
       "ap2Name": "cockpit_plug",
@@ -4968,14 +5028,19 @@
       "ap2ID": "id-27561"
     },
     {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-75573",
+      "ap2ID": "id-75621"
+    },
+    {
       "ap2Name": "wires",
       "ap1ID": "id-75587",
       "ap2ID": "id-75573"
     },
     {
-      "ap2Name": "wires",
-      "ap1ID": "id-75587",
-      "ap2ID": "id-75600"
+      "ap2Name": "geometry",
+      "ap1ID": "id-75630",
+      "ap2ID": "id-75639"
     }
   ],
   "unitsKey": "Inches",
